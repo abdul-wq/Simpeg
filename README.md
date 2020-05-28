@@ -1,1 +1,1 @@
-Web masih dalam pengembangan pak
+Website masih dalam pengembangan pak
