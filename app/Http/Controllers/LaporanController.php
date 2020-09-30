@@ -40,7 +40,7 @@ class LaporanController extends Controller
     {
         // return $request;
         $request->validate([
-            'tgl' => 'required' ]);
+            'tgl' => 'required', 'date' ]);
 
         $tambah= Laporan::create($request->all());
 
