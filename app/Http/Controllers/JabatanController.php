@@ -49,24 +49,13 @@ class JabatanController extends Controller
         return view('/admin/jabatan', compact('jabatan'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Jabatan  $jabatan
-     * @return \Illuminate\Http\Response
-     */
+    
     public function update(Request $request, Jabatan $jabatan)
     {
         
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Jabatan  $jabatan
-     * @return \Illuminate\Http\Response
-     */
+  
     public function destroy($id)
     {
         $id= Jabatan::FindOrFail($id);
