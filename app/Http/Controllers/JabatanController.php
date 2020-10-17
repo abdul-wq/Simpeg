@@ -37,23 +37,13 @@ class JabatanController extends Controller
         }
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Jabatan  $jabatan
-     * @return \Illuminate\Http\Response
-     */
+    
     public function show(Jabatan $jabatan)
     {
-        //
+        
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Jabatan  $jabatan
-     * @return \Illuminate\Http\Response
-     */
+    
     public function edit(Jabatan $jabatan)
     {
         return view('/admin/jabatan', compact('jabatan'));
