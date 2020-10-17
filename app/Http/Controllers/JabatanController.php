@@ -9,22 +9,14 @@ use Illuminate\Http\Request;
 
 class JabatanController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    
     public function index()
     {
         $jabatan= Jabatan::paginate(5);
         return view('/admin/jabatan', compact('jabatan'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    
 
     public function store(Request $request)
     {
